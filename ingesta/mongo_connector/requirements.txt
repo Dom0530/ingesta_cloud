@@ -1,3 +1,0 @@
-pymongo
-pandas
-boto3
