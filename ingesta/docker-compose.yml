@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  postgres_exporter:
+    build: ./postgres_connector
+    env_file: .env
+    volumes:
+      - ./data:/data
+
+  mysql_exporter:
+    build: ./mysql_connector
+    env_file: .env
+    volumes:
+      - ./data:/data
+
+  mongo_exporter:
+    build: ./mongo_connector
+    env_file: .env
+    volumes:
+      - ./data:/data
